@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Ric Rock Mining Ltd</title>
+    <meta name="description"
+        content="Explore Ric Rock Mining's portfolio of gold, coal, lithium, and iron ore projects across the globe." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c9a84c'/><text y='24' x='5' font-size='22'>⛏</text></svg>" />
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">⛏</div>Ric Rock <span>Mining</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+            <a href="projects.html" class="active">Projects</a><a href="sustainability.html">Sustainability</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html" class="btn btn-primary" style="padding:10px 22px;font-size:0.8rem;">Contact Us</a>
+        </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="nav-mobile" id="mobileNav">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+        <a href="projects.html">Projects</a><a href="sustainability.html">Sustainability</a>
+        <a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+    </div>
+
+    <div class="page-hero">
+        <div class="bg"
+            style="background-image:url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=1920&q=80');">
+        </div>
+        <div class="container page-hero-content">
+            <span class="section-tag">Our Portfolio</span>
+            <h1>Global <span style="color:var(--clr-gold);">Projects</span></h1>
+            <p style="margin-top:14px;max-width:580px;">140+ projects completed across 32 countries — building the
+                minerals backbone of tomorrow's economy.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Project Portfolio</span>
+                <h2 class="section-title">Our Mining <span>Operations</span></h2>
+                <div class="gold-line"></div>
+                <p class="section-subtitle" style="margin-top:16px;">Filter by commodity to explore our diverse
+                    portfolio of active and completed projects.</p>
+            </div>
+
+            <!-- FILTER -->
+            <div class="proj-filter reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="gold">🥇 Gold</button>
+                <button class="filter-btn" data-filter="coal">🪨 Coal</button>
+                <button class="filter-btn" data-filter="lithium">⚡ Lithium</button>
+                <button class="filter-btn" data-filter="iron">🔩 Iron Ore</button>
+            </div>
+
+            <!-- PROJECT GRID -->
+            <div class="proj-grid">
+                <div class="proj-card reveal d1" data-type="gold">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1565267653832-b3e3a7bde7fc?auto=format&fit=crop&w=600&q=80"
+                            alt="Jos Deep Gold Project" />
+                        <span class="proj-badge">Gold</span>
+                        <span class="proj-status status-active">● Active</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Plateau State, Nigeria</div>
+                        <h3>Jos Deep Gold Project</h3>
+                        <p>Our flagship gold operation producing 180,000 oz/year from a 4.2Moz resource base.
+                            Underground and open-pit operations with on-site CIL processing.</p>
+                    </div>
+                </div>
+                <div class="proj-card reveal d2" data-type="lithium">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=600&q=80"
+                            alt="Pilbara Lithium Project" />
+                        <span class="proj-badge">Lithium</span>
+                        <span class="proj-status status-active">● Active</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Western Australia</div>
+                        <h3>Pilbara Lithium Project</h3>
+                        <p>Hard-rock spodumene operation producing 320,000 t/year of 5.5% Li₂O concentrate, supplying
+                            battery manufacturers across Asia and Europe.</p>
+                    </div>
+                </div>
+                <div class="proj-card reveal d3" data-type="iron">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+                            alt="Cerro Hierro Iron Project" />
+                        <span class="proj-badge">Iron Ore</span>
+                        <span class="proj-status status-active">● Active</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Minas Gerais, Brazil</div>
+                        <h3>Cerro Hierro Iron Project</h3>
+                        <p>Open-pit iron ore mine producing 12 Mtpa of 64% Fe high-grade fines and pellet feed. Direct
+                            rail link to the Port of Santos.</p>
+                    </div>
+                </div>
+                <div class="proj-card reveal d1" data-type="gold">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80"
+                            alt="Ashanti Gold Extension" />
+                        <span class="proj-badge">Gold</span>
+                        <span class="proj-status status-done">✓ Completed</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Ashanti Region, Ghana</div>
+                        <h3>Ashanti Gold Extension</h3>
+                        <p>Underground extension of a legacy operation, adding 620,000 oz of reserve. Project delivered
+                            under budget with record low environmental footprint.</p>
+                    </div>
+                </div>
+                <div class="proj-card reveal d2" data-type="coal">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80"
+                            alt="Kuznetsk Coal Project" />
+                        <span class="proj-badge">Coal</span>
+                        <span class="proj-status status-active">● Active</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Kemerovo Oblast, Russia</div>
+                        <h3>Kuznetsk Coking Coal</h3>
+                        <p>High-quality coking coal operation supplying integrated steel mills across Asia. Longwall
+                            underground mining with 8 Mtpa ROM output.</p>
+                    </div>
+                </div>
+                <div class="proj-card reveal d3" data-type="lithium">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80"
+                            alt="Atacama Lithium Brine" />
+                        <span class="proj-badge">Lithium</span>
+                        <span class="proj-status status-active">● Active</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Atacama Desert, Chile</div>
+                        <h3>Atacama Lithium Brine</h3>
+                        <p>Brine lithium extraction from one of the world's highest-grade salars. Produces battery-grade
+                            lithium carbonate using direct lithium extraction (DLE) technology.</p>
+                    </div>
+                </div>
+                <div class="proj-card reveal d1" data-type="iron">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?auto=format&fit=crop&w=600&q=80"
+                            alt="Simandou Iron Ore" />
+                        <span class="proj-badge">Iron Ore</span>
+                        <span class="proj-status status-done">✓ Completed</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Simandou, Guinea</div>
+                        <h3>West Africa Iron Feasibility</h3>
+                        <p>Bankable feasibility study for a 30 Mtpa super-high-grade iron ore project, including 670km
+                            rail and deep-water port infrastructure assessment.</p>
+                    </div>
+                </div>
+                <div class="proj-card reveal d2" data-type="coal">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=80"
+                            alt="Bowen Basin Coal Project" />
+                        <span class="proj-badge">Coal</span>
+                        <span class="proj-status status-done">✓ Completed</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Queensland, Australia</div>
+                        <h3>Bowen Basin Coal Project</h3>
+                        <p>Open-cut coking and thermal coal operation producing 4 Mtpa. Successfully rehabilitated and
+                            closed in 2023, winning the ICMM Closure Excellence Award.</p>
+                    </div>
+                </div>
+                <div class="proj-card reveal d3" data-type="gold">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=600&q=80"
+                            alt="Mongolian Gold" />
+                        <span class="proj-badge">Gold</span>
+                        <span class="proj-status status-active">● Active</span>
+                    </div>
+                    <div class="proj-info">
+                        <div class="proj-loc">📍 Ömnögovi, Mongolia</div>
+                        <h3>Gobi Gold Project</h3>
+                        <p>Heap leach gold operation in a remote desert environment, producing 95,000 oz/year. Powered
+                            by 100% renewable energy — solar and wind hybrid system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-strip" style="margin-top:0;">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal d1">
+                    <div class="stat-number" data-target="140" data-suffix="+">0+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item reveal d2">
+                    <div class="stat-number" data-target="32">0</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-item reveal d3">
+                    <div class="stat-number" data-target="4" data-suffix=" Commodities">0</div>
+                    <div class="stat-label">Core Commodities</div>
+                </div>
+                <div class="stat-item reveal d4">
+                    <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+                    <div class="stat-label">On-Time Delivery Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="font-size:1.2rem;">
+                        <div class="nav-logo-icon">⛏</div>Ric Rock <span>Mining</span>
+                    </a>
+                    <p>Delivering sustainable mining solutions across six continents since 1998.</p>
+                    <div class="footer-social">
+                        <div class="soc-ico">in</div>
+                        <div class="soc-ico">𝕏</div>
+                        <div class="soc-ico">f</div>
+                        <div class="soc-ico">▶</div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Mineral Exploration</a></li>
+                        <li><a href="services.html">Extraction & Processing</a></li>
+                        <li><a href="services.html">Environmental Mgmt</a></li>
+                        <li><a href="services.html">Equipment & Logistics</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="ftr-contact"><span>📍</span><span>15 Mineral Way, Jos, 930282, Nigeria</span></div>
+                    <div class="ftr-contact"><span>📞</span><span>+234 80 0000 4200</span></div>
+                    <div class="ftr-contact"><span>✉️</span><span>info@ricrockmining.com</span></div>
+                </div>
+            </div>
+        </div>
+        <div style="border-top:1px solid var(--clr-border);">
+            <div class="container footer-bottom">
+                <p>© 2026 Ric Rock Mining Ltd. All rights reserved.</p>
+                <p>Privacy Policy · Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
